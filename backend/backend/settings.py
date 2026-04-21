@@ -8,8 +8,12 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '123.123.123.123']
-
+ALLOWED_HOSTS = [
+    'testprojectdjjj.hopto.org',
+    '127.0.0.1',
+    'localhost',
+    '130.193.57.94',
+]
 
 # Application definition
 
@@ -23,6 +27,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://testprojectdjjj.hopto.org',
 ]
 
 MIDDLEWARE = [
